@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url(formstyle.css);
+    </style>
+</head>
+<body>
+    <div class="container"><h3>randomGame survey Form</h3>
+        <form>
+        <div class="formlabels">
+            <label id="label">Name</label>
+            <input type="text" placeholder="Enter your name" class="inputfield" required><br></div>
+        <div class="formlabels">
+            <label id="label">Email</label>
+            <input type="email" placeholder="Enter your email" class="inputfield" required><br></div>
+        <div class="formlabels">
+            <label id="label">Age<span class="subOpt">(optional)</span></label>
+            <input type="number" min="12" placeholder="Age" class="inputfield">
+        </div>
+        <div class="formlabels">
+            <label id="label">What do you like the most in our game?</label>
+            <select class="listField" required>
+                <option disabled selected>Select your opinion</option>
+                <option>Gameplay</option>
+                <option>Design</option>
+                <option>Story</option>
+            </select>
+        </div>
+        <div class="formlabels">
+            <label id="label">Do you like our game?</label>
+            <label id="radiolabel">
+                <input type="radio" name="likes" value="yes" checked required>Yes
+            </label>
+            <label id="radiolabel">
+                <input type="radio" name="likes" value="no">No
+            </label>
+            <label id="radiolabel">
+                <input type="radio" name="likes" value="other">I prefer not to say
+            </label>
+        </div>
+        <div class="formlabels">
+            <label id="label">Any suggestions?</label>
+            <textarea class="textField" placeholder="Enter your comment here"></textarea>
+        </div>
+        <div class="formlabels">
+            <button type="submit" class="submitButton">Submit!</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
